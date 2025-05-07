@@ -27,25 +27,25 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           <a
             href="#obituary"
-            className="text-white/80 hover:text-white transition hover:scale-105"
+            className="text-white/80 hover:text-white transition"
           >
             Obituary
           </a>
           <a
             href="#tributes"
-            className="text-white/80 hover:text-white transition hover:scale-105"
+            className="text-white/80 hover:text-white transition"
           >
             Tributes
           </a>
           <a
             href="#gallery"
-            className="text-white/80 hover:text-white transition hover:scale-105"
+            className="text-white/80 hover:text-white transition"
           >
             Gallery
           </a>
           <a
             href="#timeline"
-            className="text-white/80 hover:text-white transition hover:scale-105"
+            className="text-white/80 hover:text-white transition"
           >
             Timeline
           </a>
