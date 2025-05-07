@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-tanBrown: #a6650a;
+  --color-vibrantBrown: #7d4b01;
+  --color-burgundy: #73102a;
+  --color-smokeWhite: #b4b9b4;
+}
+
 .intro-text {
   font-family: "Tangerine", sans-serif;
 }
