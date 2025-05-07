@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.intro-text {
+  font-family: "Tangerine", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Comfortaa", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* iOS-specific border rendering fix */
+@supports (-webkit-touch-callout: none) {
+  .hero-image {
+    border: 1px solid transparent;
+    transform: translateZ(0);
+  }
+}
+
+/* Cross-browser smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation keyframes for fade-in effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
