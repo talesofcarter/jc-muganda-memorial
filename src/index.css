@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-tanBrown: #a6650a;
   --color-vibrantBrown: #7d4b01;
   --color-burgundy: #73102a;
@@ -38,7 +38,6 @@ img {
   user-select: none;
 }
 
-/* iOS-specific border rendering fix */
 @supports (-webkit-touch-callout: none) {
   .hero-image {
     border: 1px solid transparent;
@@ -46,12 +45,10 @@ img {
   }
 }
 
-/* Cross-browser smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Animation keyframes for fade-in effect */
 @keyframes fadeInUp {
   from {
     opacity: 0;

@@ -31,18 +31,28 @@ const Navbar = () => {
           >
             Obituary
           </a>
+
           <a
             href="#tributes"
             className="text-white/80 hover:text-white transition"
           >
             Tributes
           </a>
+
           <a
             href="#gallery"
             className="text-white/80 hover:text-white transition"
           >
             Gallery
           </a>
+
+          <a
+            href="#memory"
+            className="text-white/80 hover:text-white transition"
+          >
+            Memory Wall
+          </a>
+
           <a
             href="#timeline"
             className="text-white/80 hover:text-white transition"

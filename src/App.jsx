@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HeroMain from "./components/Hero/HeroMain";
 import Obituary from "./components/Obituary/Obituary";
 import TributesMain from "./components/Tributes/TributesMain";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroMain />
       <Obituary />
       <TributesMain />
+      <Gallery />
       <div className="h-screen"></div>
     </main>
   );

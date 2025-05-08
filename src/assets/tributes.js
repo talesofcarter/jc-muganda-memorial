@@ -84,7 +84,6 @@ export default [
     message: "Gone from sight, but stitched in our hearts",
     portrait: "/images/portraits/ricky.jpg",
   },
-  ,
   {
     id: 15,
     person: "John",
