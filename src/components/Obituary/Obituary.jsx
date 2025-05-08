@@ -8,7 +8,7 @@ const Obituary = () => {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-orange-300 tracking-tight">
-            In Loving Memory
+            Obituary
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
             Celebrating the Life of Jean-Carol Muganda
@@ -17,7 +17,7 @@ const Obituary = () => {
         </div>
 
         {/* Obituary Content */}
-        <div className="bg-slate-800/70 backdrop-blur-md rounded-2xl p-8 md:p-12 shadow-2xl border border-slate-700/30 transition-all hover:shadow-orange-300/10">
+        <div className="bg-slate-800/70 backdrop-blur-md rounded-2xl p-8 md:p-12 shadow-2xl border border-slate-700/30 transition-all">
           <div className="flex flex-col md:flex-row gap-8">
             {/* Portrait */}
             <div className="md:w-1/3 flex-shrink-0">
