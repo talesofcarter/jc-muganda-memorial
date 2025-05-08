@@ -15,6 +15,10 @@ const HeroRight = () => {
       <p className="text-lg md:text-xl lg:text-2xl mt-4 animate-fade-in-up">
         ~ Dr. Roselyne Okello
       </p>
+      <div className="flex flex-col text-left mt-6 gap-2 text-base">
+        <p>Sunrise: Sunday, June 3, 1979</p>
+        <p>Sunset: Sunday, May 4, 2025</p>
+      </div>
     </section>
   );
 };

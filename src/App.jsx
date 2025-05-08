@@ -3,6 +3,7 @@ import HeroMain from "./components/Hero/HeroMain";
 import Obituary from "./components/Obituary/Obituary";
 import TributesMain from "./components/Tributes/TributesMain";
 import Gallery from "./components/Gallery/Gallery";
+import Memorial from "./components/Memorial/Memorial";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Obituary />
       <TributesMain />
       <Gallery />
+      <Memorial />
       <div className="h-screen"></div>
     </main>
   );
