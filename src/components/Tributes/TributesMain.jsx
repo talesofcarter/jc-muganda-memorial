@@ -22,7 +22,10 @@ const TributesMain = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-slate-800 text-slate-100 relative overflow-hidden">
+    <section
+      id="tributes"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-slate-800 text-slate-100 relative overflow-hidden"
+    >
       {/* Section Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-orange-300 tracking-tight">
