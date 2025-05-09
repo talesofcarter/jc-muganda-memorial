@@ -1,5 +1,5 @@
 import React from "react";
-import portrait from "/images/jean-profile.jpg";
+import portrait from "/images/jean-23.jpeg";
 
 const Obituary = () => {
   return (

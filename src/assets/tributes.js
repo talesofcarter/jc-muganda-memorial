@@ -113,7 +113,7 @@ export default [
     id: 19,
     person: "Paul Senick",
     message: "Forever Loved , Forever missed",
-    portrait: "",
+    portrait: "/images/portraits/senik.jpeg",
   },
   {
     id: 20,
@@ -131,7 +131,7 @@ export default [
     id: 22,
     person: "Laura",
     message: "Big heart. Too well loved to ever be forgotten",
-    portrait: "",
+    portrait: "/images/portraits/laura.jpg",
   },
   {
     id: 23,
