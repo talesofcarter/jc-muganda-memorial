@@ -36,12 +36,11 @@ const Gallery = () => {
     }
   };
 
-  // Handle pagination button click with scroll to gallery section
   const handlePaginationClick = (section) => {
     setCurrentSection(section);
     const gallerySection = document.getElementById("gallery");
     if (gallerySection) {
-      const offset = -80; // Match Navbar's react-scroll offset
+      const offset = -80;
       const topPosition =
         gallerySection.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top: topPosition, behavior: "smooth" });

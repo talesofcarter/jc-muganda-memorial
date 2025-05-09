@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MemorialEntry from "./MemorialEntry.jsx";
 import message from "../../assets/message.js";
+import { Link } from "react-scroll";
 
 const Memorial = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -38,17 +39,25 @@ const Memorial = () => {
       </div>
       <div className="flex justify-center mt-8 space-x-2">
         {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageChange(index + 1)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              currentPage === index + 1
-                ? "bg-orange-300 text-slate-900"
-                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
-            }`}
+          <Link
+            to="memorial"
+            smooth={true}
+            spy={true}
+            duration={500}
+            offset={-130}
           >
-            {index + 1}
-          </button>
+            <button
+              key={index + 1}
+              onClick={() => handlePageChange(index + 1)}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer ${
+                currentPage === index + 1
+                  ? "bg-orange-300 text-slate-900"
+                  : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+              }`}
+            >
+              {index + 1}
+            </button>
+          </Link>
         ))}
       </div>
     </section>
