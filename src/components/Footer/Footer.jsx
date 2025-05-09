@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./footer.css";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../animations/variants";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -38,20 +40,44 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-orange-300">
+          <motion.h2
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-orange-300"
+          >
             Let's Connect
-          </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="text-lg text-gray-300 max-w-3xl mx-auto"
+          >
             We create meaningful digital memorials to honor your loved ones.
             Reach out to learn how we can help preserve their legacy.
-          </p>
-          <div className="w-24 h-1 bg-orange-300 mx-auto mt-4 rounded-full"></div>
+          </motion.p>
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="w-24 h-1 bg-orange-300 mx-auto mt-4 rounded-full"
+          ></motion.div>
         </div>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
-          <div className="space-y-6">
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="space-y-6"
+          >
             <h3 className="text-xl font-semibold text-white">
               Contact Information
             </h3>
@@ -150,10 +176,16 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="space-y-6"
+          >
             <h3 className="text-xl font-semibold text-white">Quick Links</h3>
             <nav className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
@@ -175,10 +207,16 @@ const Footer = () => {
                 </Link>
               ))}
             </nav>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="space-y-6">
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            className="space-y-6"
+          >
             <h3 className="text-xl font-semibold text-white">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -233,7 +271,7 @@ const Footer = () => {
                 </div>
               )}
             </form>
-          </div>
+          </motion.div>
         </div>
 
         {/* Copyright Section */}
