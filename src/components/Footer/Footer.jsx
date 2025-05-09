@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./footer.css";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -156,18 +157,22 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-white">Quick Links</h3>
             <nav className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { name: "Obituary", href: "#" },
-                { name: "Tributes", href: "#" },
-                { name: "Gallery", href: "#" },
-                { name: "Memorial Wall", href: "#" },
+                { name: "Obituary", section: "obituary" },
+                { name: "Tributes", section: "tributes" },
+                { name: "Gallery", section: "gallery" },
+                { name: "Memorial Wall", section: "memorial" },
               ].map((link) => (
-                <a
+                <Link
+                  to={link.section}
+                  smooth={true}
+                  spy={true}
+                  duration={500}
+                  offset={-130}
                   key={link.name}
-                  href={link.href}
-                  className="text-gray-300 hover:text-orange-300 transition-colors duration-200"
+                  className="text-gray-300 hover:text-orange-300 transition-colors duration-200 cursor-pointer"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
