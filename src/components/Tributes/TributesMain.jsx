@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import SingleTribute from "./SingleTribute.jsx";
 import tributes from "../../assets/tributes.js";
 import { MdOutlineNavigateNext } from "react-icons/md";
@@ -6,6 +6,18 @@ import { GrFormPrevious } from "react-icons/gr";
 
 const TributesMain = () => {
   const carouselRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1024); // Matches Tailwind's lg breakpoint
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const scrollToNext = () => {
     if (carouselRef.current) {
@@ -19,6 +31,36 @@ const TributesMain = () => {
       const cardWidth = 384;
       carouselRef.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
     }
+  };
+
+  const handleTouchStart = (e) => {
+    if (!isMobile) return;
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isMobile) return;
+    touchEndX.current = e.touches[0].clientX;
+    e.preventDefault();
+  };
+
+  const handleTouchEnd = () => {
+    if (!isMobile || touchStartX.current === null || touchEndX.current === null)
+      return;
+
+    const deltaX = touchEndX.current - touchStartX.current;
+    const minSwipeDistance = 50;
+
+    if (Math.abs(deltaX) > minSwipeDistance) {
+      if (deltaX < 0) {
+        scrollToNext();
+      } else {
+        scrollToPrevious();
+      }
+    }
+
+    touchStartX.current = null;
+    touchEndX.current = null;
   };
 
   return (
@@ -42,6 +84,10 @@ const TributesMain = () => {
         <div
           ref={carouselRef}
           className="flex gap-6 overflow-x-hidden snap-x snap-mandatory scroll-smooth pb-4"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          style={{ touchAction: "pan-y" }}
         >
           {tributes.map((tribute) => (
             <div
