@@ -33,47 +33,54 @@ const Obituary = () => {
             {/* Text Content */}
             <div className="md:w-2/3">
               <p className="text-base md:text-lg leading-relaxed text-slate-200">
-                <span className="font-semibold">Jean-Carol Muganda</span>, a
-                cherished wife, mother, grandmother, and pillar of her
-                community, passed away peacefully on March 25, 2023, at the age
-                of 73. Born on March 10, 1950, Jean was raised with a deep
-                commitment to family and community, excelling in academics and
-                athletics during her high school years. She went on to earn a
-                Bachelor's degree in Business Administration, laying the
-                foundation for a remarkable career.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
+                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Sed vitae justo at urna facilisis commodo.
+                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae; Fusce non metus nec lorem tempus hendrerit.
               </p>
               <p className="text-base md:text-lg leading-relaxed text-slate-200 mt-4">
-                In 1975, Jean married her beloved partner, George, embarking on
-                a 48-year journey of love and devotion. Together, they raised
-                two children, Emily and Michael, and delighted in their roles as
-                grandparents to Grace, Ethan, and Lily. Jean's warmth and wisdom
-                touched every aspect of her family life.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
+                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Sed vitae justo at urna facilisis commodo.
+                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae; Fusce non metus nec lorem tempus hendrerit.
               </p>
               <p className="text-base md:text-lg leading-relaxed text-slate-200 mt-4">
-                Jean's professional career in finance was distinguished by her
-                integrity and dedication to mentoring young professionals.
-                Beyond her career, she poured her heart into charitable causes,
-                leaving an indelible mark on her community. An avid lover of the
-                outdoors, Jean cherished weekends spent camping, fishing, and
-                hiking, passing her passion for nature to her family.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
+                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Sed vitae justo at urna facilisis commodo.
+                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae; Fusce non metus nec lorem tempus hendrerit.
               </p>
               <p className="text-base md:text-lg leading-relaxed text-slate-200 mt-4">
-                Jean is survived by her loving spouse, George, her children,
-                Emily and Michael, her grandchildren, Grace, Ethan, and Lily,
-                and her siblings, Robert Jr. and Susan. A memorial service will
-                be held on October 2, 2023, at 2:00 PM at St. Mary's Community
-                Church. In lieu of flowers, the family kindly requests donations
-                to the{" "}
-                <a href="#" className="text-orange-300 hover:underline">
-                  Jean-Carol Muganda Memorial Scholarship Fund
-                </a>
-                , which supports educational opportunities for underprivileged
-                youth.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
+                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Sed vitae justo at urna facilisis commodo.
+                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae; Fusce non metus nec lorem tempus hendrerit.
               </p>
               <p className="text-base md:text-lg leading-relaxed text-slate-200 mt-4 italic">
-                Jean's legacy endures through the lives she touched, the values
-                she championed, and the love she so generously shared. She will
-                be profoundly missed but forever remembered.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
+                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Sed vitae justo at urna facilisis commodo.
+                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae; Fusce non metus nec lorem tempus hendrerit.
               </p>
             </div>
           </div>

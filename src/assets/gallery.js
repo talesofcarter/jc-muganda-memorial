@@ -1,5 +1,5 @@
 export default [
-  "./images/jean-1.jpg",
+  "/images/jean-1.jpg",
   "/images/jean-2.jpg",
   "/images/jean-3.jpg",
   "/images/jean-4.jpg",
