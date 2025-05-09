@@ -36,6 +36,18 @@ const Gallery = () => {
     }
   };
 
+  // Handle pagination button click with scroll to gallery section
+  const handlePaginationClick = (section) => {
+    setCurrentSection(section);
+    const gallerySection = document.getElementById("gallery");
+    if (gallerySection) {
+      const offset = -80; // Match Navbar's react-scroll offset
+      const topPosition =
+        gallerySection.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top: topPosition, behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="gallery"
@@ -74,9 +86,9 @@ const Gallery = () => {
         {/* Section Buttons */}
         <div className="flex justify-center gap-4 mt-8 flex-wrap">
           <button
-            onClick={() => setCurrentSection("initial")}
+            onClick={() => handlePaginationClick("initial")}
             className={`
-              px-4 py-2 rounded-full font-semibold text-sm md:text-base
+              px-4 py-2 rounded-md font-semibold text-sm md:text-base cursor-pointer
               ${
                 currentSection === "initial"
                   ? "bg-orange-300 text-gray-900"
@@ -91,9 +103,9 @@ const Gallery = () => {
           {Array.from({ length: totalSections }, (_, i) => (
             <button
               key={i + 1}
-              onClick={() => setCurrentSection(`section${i + 1}`)}
+              onClick={() => handlePaginationClick(`section${i + 1}`)}
               className={`
-                px-4 py-2 rounded-full font-semibold text-sm md:text-base
+                px-4 py-2 rounded-md font-semibold text-sm md:text-base cursor-pointer
                 ${
                   currentSection === `section${i + 1}`
                     ? "bg-orange-300 text-gray-900"
