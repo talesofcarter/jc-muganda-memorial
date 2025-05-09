@@ -1,5 +1,5 @@
 import React from "react";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar/Navbar";
 import HeroMain from "./components/Hero/HeroMain";
 import Obituary from "./components/Obituary/Obituary";
@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <main className="bg-gray-900">
+      <Analytics />
       <Navbar />
       <HeroMain />
       <Obituary />
@@ -18,7 +19,6 @@ function App() {
       <Gallery />
       <Memorial />
       <Footer />
-      <Analytics />
     </main>
   );
 }
