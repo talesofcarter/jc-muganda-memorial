@@ -29,6 +29,13 @@ const Gallery = () => {
     return () => window.removeEventListener("keydown", handleEscape);
   }, [selectedImage]);
 
+  // Handle background click to close popup
+  const handleBackgroundClick = (e) => {
+    if (e.target.classList.contains("popup-background")) {
+      setSelectedImage(null);
+    }
+  };
+
   return (
     <section
       id="gallery"
@@ -51,10 +58,8 @@ const Gallery = () => {
           {getCurrentImages().map((image, index) => (
             <div
               key={index}
-              className="relative aspect-square overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl lg:cursor-pointer"
-              onClick={() =>
-                window.innerWidth >= 1024 && setSelectedImage(image)
-              }
+              className="relative aspect-square overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              onClick={() => setSelectedImage(image)}
             >
               <img
                 src={image}
@@ -105,10 +110,13 @@ const Gallery = () => {
       </div>
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in lg:block">
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in popup-background"
+          onClick={handleBackgroundClick}
+        >
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 p-2 bg-slate-800/70 text-orange-300 rounded-full hover:bg-slate-700/70 transition-colors"
+            className="absolute top-4 right-4 p-3 bg-slate-800/70 text-orange-300 rounded-full hover:bg-slate-700/70 transition-colors sm:p-2"
             aria-label="Close image popup"
           >
             <svg
@@ -129,7 +137,7 @@ const Gallery = () => {
           <img
             src={selectedImage}
             alt="Full-screen memory of Jean-Carol"
-            className="max-w-[90%] max-h-[90%] object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="max-w-[calc(100%-1rem)] max-h-[calc(100%-1rem)] sm:max-w-[90%] sm:max-h-[90%] object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             loading="eager"
           />
         </div>
