@@ -3,7 +3,10 @@ import portrait from "/images/jean-profile.jpg";
 
 const Obituary = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-slate-800 text-slate-100 relative overflow-hidden">
+    <section
+      id="obituary"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-slate-800 text-slate-100 relative overflow-hidden"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">

@@ -4,6 +4,7 @@ import Obituary from "./components/Obituary/Obituary";
 import TributesMain from "./components/Tributes/TributesMain";
 import Gallery from "./components/Gallery/Gallery";
 import Memorial from "./components/Memorial/Memorial";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <TributesMain />
       <Gallery />
       <Memorial />
-      <div className="h-screen"></div>
+      <Footer />
     </main>
   );
 }

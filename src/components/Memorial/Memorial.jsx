@@ -26,7 +26,8 @@ const Memorial = () => {
           Memorial Wall
         </h1>
         <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
-          A place to honor and remember those who touched our lives.
+          A place to share messages of love, remembrance, and condolences in
+          honor of a cherished life.
         </p>
         <div className="w-24 h-1 bg-orange-300 mx-auto mt-4 rounded-full"></div>
       </div>

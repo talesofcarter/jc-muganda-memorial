@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -32,30 +33,46 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex space-x-6">
-            <a
-              href="#obituary"
-              className="text-white/80 hover:text-white transition"
+            <Link
+              to="obituary"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-130}
+              className="text-white/80 hover:text-white transition cursor-pointer"
             >
               Obituary
-            </a>
-            <a
-              href="#tributes"
-              className="text-white/80 hover:text-white transition"
+            </Link>
+            <Link
+              to="tributes"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-130}
+              className="text-white/80 hover:text-white transition cursor-pointer"
             >
               Tributes
-            </a>
-            <a
-              href="#gallery"
-              className="text-white/80 hover:text-white transition"
+            </Link>
+            <Link
+              to="gallery"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-130}
+              className="text-white/80 hover:text-white transition cursor-pointer"
             >
               Gallery
-            </a>
-            <a
-              href="#memory"
-              className="text-white/80 hover:text-white transition"
+            </Link>
+            <Link
+              to="memorial"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-130}
+              className="text-white/80 hover:text-white transition cursor-pointer"
             >
               Memory Wall
-            </a>
+            </Link>
           </div>
 
           <button
@@ -95,34 +112,49 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-col space-y-4 px-6">
-          <a
-            href="#obituary"
-            className="text-white/80 hover:text-white transition text-lg"
+          <Link
+            to="obituary"
+            smooth={true}
+            spy={true}
+            duration={500}
+            offset={-130}
+            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
             onClick={toggleSidebar}
           >
             Obituary
-          </a>
-          <a
-            href="#tributes"
-            className="text-white/80 hover:text-white transition text-lg"
+          </Link>
+          <Link
+            to="tributes"
+            smooth={true}
+            spy={true}
+            duration={500}
+            offset={-130}
+            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
             onClick={toggleSidebar}
           >
             Tributes
-          </a>
-          <a
-            href="#gallery"
-            className="text-white/80 hover:text-white transition text-lg"
+          </Link>
+
+          <Link
+            to="gallery"
+            smooth={true}
+            spy={true}
+            duration={500}
+            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
             onClick={toggleSidebar}
           >
             Gallery
-          </a>
-          <a
-            href="#memory"
-            className="text-white/80 hover:text-white transition text-lg"
+          </Link>
+          <Link
+            to="memorial"
+            smooth={true}
+            spy={true}
+            duration={500}
+            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
             onClick={toggleSidebar}
           >
             Memory Wall
-          </a>
+          </Link>
         </div>
       </div>
 

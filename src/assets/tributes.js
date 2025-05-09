@@ -52,7 +52,7 @@ export default [
     id: 9,
     person: "Clara Juma",
     message: "Your spirit lives on in the hearts of those who love you.",
-    portrait: "",
+    portrait: "/images/portraits/clara.jpeg",
   },
   {
     id: 10,
@@ -95,7 +95,7 @@ export default [
     id: 16,
     person: "Regina",
     message: "You lit up our world, now you shine among stars.",
-    portrait: "",
+    portrait: "/images/portraits/regis.png",
   },
   {
     id: 17,
@@ -119,7 +119,7 @@ export default [
     id: 20,
     person: "Isaac Okello",
     message: "Dance with the angels, forever in our hearts.",
-    portrait: "",
+    portrait: "/images/portraits/supi.jpeg",
   },
   {
     id: 21,
@@ -136,19 +136,20 @@ export default [
   {
     id: 23,
     person: "Celine Dion",
-    message: "Never forgotten, forever missed💔",
-    portrait: "",
+    message: "Never forgotten, forever missed",
+    portrait: "/images/portraits/dion.jpeg",
   },
   {
     id: 24,
     person: "Silo",
     message: "Life starts at 40",
+    portrait: "/images/portraits/silo.jpeg",
   },
   {
     id: 25,
     person: "Kevo OT",
     message: "",
-    portrait: "",
+    portrait: "/images/portraits/ot.jpeg",
   },
   {
     id: 26,
