@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MemorialEntry from "./MemorialEntry.jsx";
 import message from "../../assets/message.js";
 import { Link } from "react-scroll";
+import { DominoContainer } from "../../animations/Animate";
 
 const Memorial = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -32,11 +33,13 @@ const Memorial = () => {
         </p>
         <div className="w-24 h-1 bg-orange-300 mx-auto mt-4 rounded-full"></div>
       </div>
-      <div className="max-w-5xl mx-auto">
-        {currentItems.map((item) => (
-          <MemorialEntry key={item.id} {...item} />
-        ))}
-      </div>
+      <DominoContainer>
+        <div className="max-w-5xl mx-auto">
+          {currentItems.map((item) => (
+            <MemorialEntry key={item.id} {...item} />
+          ))}
+        </div>
+      </DominoContainer>
       <div className="flex justify-center mt-8 space-x-2">
         {Array.from({ length: totalPages }, (_, index) => (
           <Link
@@ -45,9 +48,9 @@ const Memorial = () => {
             spy={true}
             duration={500}
             offset={-130}
+            key={index + 1}
           >
             <button
-              key={index + 1}
               onClick={() => handlePageChange(index + 1)}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer ${
                 currentPage === index + 1
