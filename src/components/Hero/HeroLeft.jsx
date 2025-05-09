@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import image1 from "/images/jean-1.jpg";
 import image2 from "/images/jean-2.jpg";
 import image3 from "/images/jean-3.jpg";
@@ -9,6 +9,18 @@ import { GrFormPrevious } from "react-icons/gr";
 const HeroLeft = () => {
   const slideshow = [image1, image2, image3, image4];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1024); // Matches Tailwind's lg breakpoint
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -22,8 +34,41 @@ const HeroLeft = () => {
     setCurrentIndex(newIndex);
   };
 
+  const handleTouchStart = (e) => {
+    if (!isMobile) return; // Only handle touch on mobile/tablet
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isMobile) return;
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!isMobile || touchStartX.current === null || touchEndX.current === null)
+      return;
+
+    const deltaX = touchEndX.current - touchStartX.current;
+    const minSwipeDistance = 50;
+    if (Math.abs(deltaX) > minSwipeDistance) {
+      if (deltaX < 0) {
+        goToNext();
+      } else {
+        goToPrevious();
+      }
+    }
+
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
+
   return (
-    <section className="relative w-full md:w-1/2 h-[60vh] md:h-screen overflow-hidden group">
+    <section
+      className="relative w-full md:w-1/2 h-[60vh] md:h-screen overflow-hidden group"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       {/* Slideshow */}
       <div className="relative w-full h-full">
         {slideshow.map((slide, index) => (
