@@ -1,0 +1,52 @@
+input,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: oklch(83.7% 0.128 66.29);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-textarea-placeholder {
+  color: white;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: white;
+}
+
+input::-webkit-focus-ring,
+textarea::-webkit-focus-ring {
+  outline: oklch(83.7% 0.128 66.29);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+  width: 100%;
+  max-width: 100%;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./footer.css";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -212,7 +213,7 @@ const Footer = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full px-6 py-3 rounded-md font-medium transition-colors duration-200 ${
+                  className={`w-full px-6 py-3 rounded-md font-medium transition-colors duration-200 cursor-pointer ${
                     isSubmitting
                       ? "bg-orange-300 cursor-not-allowed"
                       : "bg-orange-300 hover:bg-orange-300"
