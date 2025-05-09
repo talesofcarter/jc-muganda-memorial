@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaBook, FaHeart, FaImages, FaMonument } from "react-icons/fa";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -98,29 +98,30 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-900/95 backdrop-blur-md border-l border-white/10 z-50 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-72 bg-gray-900/98 backdrop-blur-xl border-l border-white/20 z-50 transform transition-transform duration-500 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        } shadow-2xl`}
       >
-        <div className="flex justify-end p-4">
+        <div className="flex justify-end p-5">
           <button
-            className="text-white p-2 rounded-md hover:bg-white/10 transition"
+            className="text-white/90 p-2 rounded-full hover:bg-white/10 transition-colors"
             aria-label="Close menu"
             onClick={toggleSidebar}
           >
-            <FaTimes className="w-6 h-6" />
+            <FaTimes className="w-7 h-7" />
           </button>
         </div>
-        <div className="flex flex-col space-y-4 px-6">
+        <div className="flex flex-col space-y-3 px-6 pt-4">
           <Link
             to="obituary"
             smooth={true}
             spy={true}
             duration={500}
             offset={-130}
-            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
+            className="flex items-center gap-3 text-white/90 hover:text-orange-300 transition-colors text-lg font-medium py-3 px-4 rounded-lg hover:bg-white/5 cursor-pointer"
             onClick={toggleSidebar}
           >
+            <FaBook className="w-5 h-5" />
             Obituary
           </Link>
           <Link
@@ -129,20 +130,22 @@ const Navbar = () => {
             spy={true}
             duration={500}
             offset={-130}
-            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
+            className="flex items-center gap-3 text-white/90 hover:text-orange-300 transition-colors text-lg font-medium py-3 px-4 rounded-lg hover:bg-white/5 cursor-pointer"
             onClick={toggleSidebar}
           >
+            <FaHeart className="w-5 h-5" />
             Tributes
           </Link>
-
           <Link
             to="gallery"
             smooth={true}
             spy={true}
             duration={500}
-            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
+            offset={-130}
+            className="flex items-center gap-3 text-white/90 hover:text-orange-300 transition-colors text-lg font-medium py-3 px-4 rounded-lg hover:bg-white/5 cursor-pointer"
             onClick={toggleSidebar}
           >
+            <FaImages className="w-5 h-5" />
             Gallery
           </Link>
           <Link
@@ -150,9 +153,11 @@ const Navbar = () => {
             smooth={true}
             spy={true}
             duration={500}
-            className="text-white/80 hover:text-white transition text-lg cursor-pointer"
+            offset={-130}
+            className="flex items-center gap-3 text-white/90 hover:text-orange-300 transition-colors text-lg font-medium py-3 px-4 rounded-lg hover:bg-white/5 cursor-pointer"
             onClick={toggleSidebar}
           >
+            <FaMonument className="w-5 h-5" />
             Memory Wall
           </Link>
         </div>
