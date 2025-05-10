@@ -17,7 +17,7 @@ export default [
     id: 3,
     person: "Deogratius Omondi",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "My dearest sister, not a day goes by that I don't feel the echo of your laughter, the warmth of your love, and the quiet strength you gave me. Though you're no longer by my side, you live in every tender memory, every shared secret, every moment of joy that I now carry for both of us. You were more than a sister - you were my confidant, my light, my forever friend. I miss you deeply, but I hold you close in my heart where love never fades, and time cannot reach. Until we meet again, I'll live in a way that would make you proud, holding your memory like a lantern through life's journey. With all my love, always.",
     portrait: "images/portraits/atoti.JPG",
   },
   {
