@@ -87,8 +87,8 @@ export default [
     id: 13,
     person: "Marie",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    portrait: "",
+      "Nyamin why so soon, without notice osiepa. Still in denial but what to do. God gives and He also takes the best. Nind gi kwe Nyamin 😥💔💔",
+    portrait: "/marie/portraits/marie.jpeg",
   },
   {
     id: 14,
