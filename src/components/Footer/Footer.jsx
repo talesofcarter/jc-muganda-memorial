@@ -44,7 +44,7 @@ const Footer = () => {
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-orange-300"
           >
             Let's Connect
@@ -53,7 +53,7 @@ const Footer = () => {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className="text-lg text-gray-300 max-w-3xl mx-auto"
           >
             We create meaningful digital memorials to honor your loved ones.
@@ -63,7 +63,7 @@ const Footer = () => {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className="w-24 h-1 bg-orange-300 mx-auto mt-4 rounded-full"
           ></motion.div>
         </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className="space-y-6"
           >
             <h3 className="text-xl font-semibold text-white">
@@ -183,7 +183,7 @@ const Footer = () => {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className="space-y-6"
           >
             <h3 className="text-xl font-semibold text-white">Quick Links</h3>
@@ -214,7 +214,7 @@ const Footer = () => {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className="space-y-6"
           >
             <h3 className="text-xl font-semibold text-white">Send a Message</h3>
