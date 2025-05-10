@@ -24,7 +24,7 @@ export default [
     id: 4,
     person: "Kelvin Juma",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "The most profound message you left me with before you departed was the burdens we all carry in our hearts. You were unknowingly quoting Proverbs 4:23. You understood the plight of life, and your words had a way of reaching deep beneath. Your demeanor was that of a warrior, and my biggest takeaway from you is to embrace the warrior mentality. Thank you for all the lessons you brought to us. Go the warrior way JC, till we meet again.",
     portrait: "/images/portraits/carter.jpg",
   },
   {
@@ -36,9 +36,9 @@ export default [
   },
   {
     id: 6,
-    person: "Olgah Marlene",
+    person: "Olgah Okello",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "It’s hard to find the right words to honor you, our beautiful cousin, our sister, our friend. As I sit with the memories, I am reminded of  how precious every moment truly is. The last hug we shared, the words exchanged at the hospital — they now feel like sacred gifts, moments I will treasure forever. In your own gentle way, you were saying goodbye, but our hearts were not ready to understand. If I could go back, I would hold you a little longer, listen a little deeper, and love you even harder. I carry a lesson from you for life — to never take any conversation, any moment, any embrace for granted. In our plans, we thought there would be tomorrow. But heaven had its own plans. I wish I had served you a meal from the party when we shared our last hug, I wish I had sat with you just a little longer , laughed with you one more time… but even in the pain, I am grateful for the love that was shared and the memories you have left behind. You lived with so much life even in moments where you had a reason not to , so much love, and so much light — and that is what I will hold on to. Rest in perfect peace, our JC Muganda. You will forever be in my heart. Your laughter, your kindness, your beautiful spirit — they live on in us. I love you. I miss you. And I thank God for every moment we shared. For all you were, and all you still are to us. Cheers Sissy ❤️",
     portrait: "/images/portraits/olga.png",
   },
   {
