@@ -88,7 +88,7 @@ export default [
     person: "Marie",
     message:
       "Nyamin why so soon, without notice osiepa. Still in denial but what to do. God gives and He also takes the best. Nind gi kwe Nyamin 😥💔💔",
-    portrait: "/marie/portraits/marie.jpeg",
+    portrait: "/images/portraits/marie.jpeg",
   },
   {
     id: 14,
