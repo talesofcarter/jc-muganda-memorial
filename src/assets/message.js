@@ -187,10 +187,10 @@ export default [
   },
   {
     id: 22,
-    person: "Laura",
-    title: "",
+    person: "Dr. Laura Naliaka Ochieng, Sister-In-Law",
+    title: "Dear Mama Maya",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Mama Maya, I know you are no longer here with us in the way we were used to, your laughter in the room, your quick wit, your warm hugs — but deep down, I believe you can still hear us. I believe you can see us. I believe you’re still with us in ways that go beyond what we can explain. I write this with a heart weighed down by grief. Nothing prepares you for the loss of someone so close. Nothing prepares you for the silence that follows your last goodbye. I watched you take your final breath — a moment that will forever be etched in my memory. Just moments before, we had spoken. You were still you, strong, present, full of love — and then, suddenly, you were gone. That shift, that moment, changed everything. The pain is deep and raw. But even in this sorrow, I choose to celebrate you. Because you were so much more than the pain of your departure. You were light. You were joy. You were fire and softness all in one. You lived loudly, fully, and unapologetically. You had a heart so big, it embraced everyone around you. Your love for your family, for your friends, for life it radiated. Your bubbly personality, your infectious laughter, your deep compassion they’re all still with us. Still part of us. You left us too soon, but in your time here, you gave us so much to hold on to. And the greatest gift of all? Your beautiful daughter, Maya. Every time I see her, I see you. In her eyes, in her smile, in her spirit you live on. She is your living legacy, and we will love her with everything we have. She is a reminder, every single day, that your story didn’t end it continues, through her. Mama Maya, we miss you more than words can express. But we find comfort in knowing you are now at peace. That you are surrounded by light and love, free from pain, watching over us. Rest well my big sister. Dr. Laura Naliaka Ochieng ❤️",
     portrait: "/images/laura-2.JPG",
   },
   {
