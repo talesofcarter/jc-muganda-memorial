@@ -51,9 +51,7 @@ const MemorialEntry = ({
                       clipRule="evenodd"
                     />
                   </svg>
-                  <p className="mt-2 text-slate-400">
-                    No portrait available for {person}
-                  </p>
+                  <p className="mt-2 text-slate-400">{person}</p>
                 </div>
               </div>
             )}
@@ -62,11 +60,9 @@ const MemorialEntry = ({
           {/* Message Section */}
           <div className="p-6 flex-1">
             <div className="bg-slate-750 rounded-lg p-5 shadow-inner">
-              <blockquote className="text-slate-200 text-base mb-4 border-l-4 border-orange-300 pl-4">
-                <div className="first-letter:text-4xl first-letter:font-bold first-letter:text-orange-300 first-letter:mr-1 first-letter:float-left leading-relaxed">
-                  {displayMessage}
-                  {isLongMessage && !expanded && "..."}
-                </div>
+              <blockquote className="text-slate-200 text-base mb-4 pl-4">
+                {displayMessage}
+                {isLongMessage && !expanded && "..."}
               </blockquote>
 
               {isLongMessage && (
