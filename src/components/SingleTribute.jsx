@@ -1,5 +1,3 @@
-import React from "react";
-
 const SingleTribute = ({ portrait, message, person }) => {
   return (
     <div className="bg-slate-800/70 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-slate-700/30 transition-all  h-full flex flex-col">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import image1 from "/images/jean-1.jpg";
 import image2 from "/images/jean-2.jpg";
 import image3 from "/images/jean-3.jpg";
@@ -15,7 +15,7 @@ const HeroLeft = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 1024); // Matches Tailwind's lg breakpoint
+      setIsMobile(window.innerWidth <= 1024);
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);

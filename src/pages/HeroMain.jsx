@@ -1,6 +1,5 @@
-import React from "react";
-import HeroRight from "./HeroRight";
-import HeroLeft from "./HeroLeft";
+import HeroRight from "../components/HeroRight";
+import HeroLeft from "../components/HeroLeft";
 
 const HeroMain = () => {
   return (

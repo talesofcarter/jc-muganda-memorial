@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { fadeIn } from "../../animations/variants";
+import { useState, useRef, useEffect } from "react";
+import { fadeIn } from "../animations/variants";
 import { motion } from "framer-motion";
 
 const HeroRight = () => {
