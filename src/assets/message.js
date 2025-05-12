@@ -103,9 +103,10 @@ export default [
   },
   {
     id: 12,
-    person: "Anne Fransisca",
+    person: "Anne Franciscar Okello Jr., Cousin",
     title: "",
-    message: "",
+    message:
+      "Thank you for being a cousin who always showed up for us - making every family gathering brighter, every meal special, and every event a little more beautiful. You had a heart that loved to serve and a spirit that made all of us shine. Your kindness and warmth will be cherished forever and the way you made those are you feel seen and celebrated. As you now rest, I pray you find the peace and joy so freely gave to others. You will always be loved, always remembered, and always missed. Rest beautifully, our precious Jean.",
     portrait: "/images/portraits/kado.jpg",
   },
   {
@@ -164,9 +165,10 @@ export default [
   },
   {
     id: 20,
-    person: "Isaac Okello",
+    person: "Isaac Okello (Supi)",
     title: "",
-    message: "",
+    message:
+      "Growing up, my sister was more than just family; she was my partner and my guide. She taught me many valuable lessons, not just through words but through her actions. Her kindness, empathy, and strength have shaped who I am today, teaching me the importance of compassion and perseverance.",
     portrait: "/images/portraits/supi.jpeg",
   },
   {
