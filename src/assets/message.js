@@ -13,7 +13,7 @@ export default [
     title: "Dear First Born",
     message:
       "Thanks for showing me the way you've taken on the role of big sister so beautifully. You are the incredible gift who gave me cherished title of Mother. You are the pillar upon which this family leans. Your strength, wisdom and resilience make you equal to ten men as you have always navigated the complexities of life while carrying the weight of ancestral burdens and expectations. To-date you are an equivalent of Paramount Chief Olila Muganda whom you were named after because you were born the same year that Chief Muganda left the earth of Ukwala Kingdom to sing with the Angels. Blessed is my Firstborn - your unique role; your ability to balance feminine strength  with arranged leadership skills keeps you on top. You have always balanced Family Legacy with modern challenges. l remember when your dad passed on in August 2001, my feet could not carry me to the morgue to go and pay my last respect. You held my hands, wiped my tears and together we managed. Your braveness has made me not to fear death. Rest Easy my daughter as you keep on watching over us especially my little girl Maya-Kinda.",
-    portrait: "",
+    portrait: "/images/portraits/margie.JPG",
   },
   {
     id: 2,
