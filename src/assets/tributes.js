@@ -155,7 +155,7 @@ export default [
     id: 26,
     person: "Prince",
     message: "Forever with us",
-    portrait: "",
+    portrait: "/images/portraits/prince.jpeg",
   },
   {
     id: 27,
