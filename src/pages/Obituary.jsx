@@ -59,54 +59,57 @@ const Obituary = () => {
             {/* Text Content */}
             <div className="md:w-2/3">
               <p className="text-base md:text-lg leading-7 text-slate-200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
-                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Sed vitae justo at urna facilisis commodo.
-                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Fusce non metus nec lorem tempus hendrerit.
+                Born on a Sunday, June 3, 1979, Jean was a radiant soul from the
+                beginning, bubbly, gentle yet strong, humble yet wise beyond her
+                years. She carried herself with an overt confidence and deep
+                compassion, drawing people in with her larger-than-life demeanor
+                and infectious warmth. From childhood, Jean known for her
+                resilience, independence, and thoughtful spirit-traits that
+                would remain ther hallmark throughout life. Jean grew up in
+                nurturing environment that cultivated her love for learning,
+                service, and excellence. Her early years were filled with
+                dreams, laughter, and the beginning signs of a life that would
+                be both impactful and inspiring.
               </p>
               <p className="text-base md:text-lg leading-7 text-slate-200 mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
-                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Sed vitae justo at urna facilisis commodo.
-                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Fusce non metus nec lorem tempus hendrerit.
+                Jean was the beloved daughter of Mrs. Margaret Akinyi Ogonda and
+                the Late Prof. Richard Timothy Ogonda Nyapuoch. God-daughter to
+                Mary. Niece to Felix, George, Norbert, Fred, Prisca, Pamela,
+                Everlyn. Anne, Bernadette, Collete, Vero, Maurice, Mary, Lucy,
+                Celine, Sam Owino among others. She was a devoted mother to her
+                young daughter, Maya Kinda, who was the light of her life and
+                will carry her legacy to eternity. She was a cherished sister to
               </p>
-              <p className="text-base md:text-lg leading-7 text-slate-200 mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
-                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Sed vitae justo at urna facilisis commodo.
-                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Fusce non metus nec lorem tempus hendrerit.
-              </p>
+              <p className="text-base md:text-lg leading-7 text-slate-200 mt-4"></p>
               <p className="text-base md:text-lg leading-7 text-slate-200  mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
-                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Sed vitae justo at urna facilisis commodo.
-                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Fusce non metus nec lorem tempus hendrerit.
+                Frank D. Ochieng, Mercy James, Deogratias Ogonda, the Late
+                Bertha Diero, Molly Ogonda, Dolly Ogonda, and Mercy Ogonda.
+                Sister in law to Prof. Lameck Diero, Dr. Dan Masiga, Dr. Laura
+                Naliaka Ochieng, Justice Hellen Omondi, Pastor Mary Ogola, Mrs.
+                Consolata Omondi, Mrs. Janet Mosi among others. Cousin to Dr.
+                Omondi Ogada, Soldier Joshua Orayo, Pastor Shadrack Mosi, Nick,
+                Erick, Beatrice, Christine, Quinter, George, Lilian, Jim, Dr.
+                Rose Okello, Olgah, Marie, Anne Francisca, Ricky, Sam Ochieng,
+                Steve, Lily, Isaac, Tom, Kelvin, Grace, Claire, Jeff, John,
+                Francis, Regina, Immaculate, Paul, Sylvia, Prince, Kevin,
+                Celine-Dion, among others. Jean’s deep love for her family was
+                evident in everything she did, and her presence will be
+                profoundly missed by all who knew and loved her.
               </p>
               <p className="text-base md:text-lg leading-7 text-slate-200  mt-4 italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur vehicula, nisl eu fermentum tincidunt, metus justo
-                eleifend lorem, ut fringilla massa lorem in nulla. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Sed vitae justo at urna facilisis commodo.
-                Integer ac nulla ac lorem dignissim malesuada. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Fusce non metus nec lorem tempus hendrerit.
+                Jean’s passion for excellence and service was evident early in
+                her academic journey. She started at Jack and Jill Kindergarten
+                and went to boarding school as early as Class one at Lwak Girls
+                Primary; something that led her to grow as an independent and
+                dependable person. She moved from boarding and joined various
+                primary schools viz Moi University in Eldoret; Maseno Girls
+                Boarding and Maseno Mixed all which formed her academic
+                foundation and discipline. Her secondary education took her to
+                St Barnabas Girls High and Nangina Girls High Schools where she
+                sat for her Kenya Certificate of Secondary Education. Both her
+                primary and secondary life made her to grow not only
+                intellectually, but also as a compassionate leader among her
+                peers.
               </p>
             </div>
           </div>
