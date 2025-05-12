@@ -222,15 +222,15 @@ export default [
     person: "Prince",
     title: "",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    portrait: "",
+      "Our legacy is really the lives we touch, the inspiration we give, altering someone's plan - if even for a moment - and getting them to think, cry, laugh, argue. More than anything, we are remembered for our smiles; and JC always had this huge smile on her face full of love and compassion. May her soul rest in eternal. We love you eternally.",
+    portrait: "/images/portraits/prince.jpeg",
   },
   {
     id: 27,
     person: "Michelle",
     title: "",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Our legacy is really the lives we touch, the inspiration we give, altering someone's plan - if even for a moment - and getting them to think, cry, laugh, argue. More than anything, we are remembered for our smiles; and JC always had this huge smile on her face full of love and compassion. May her soul rest in eternal. We love you eternally.",
     portrait: "",
   },
   {
