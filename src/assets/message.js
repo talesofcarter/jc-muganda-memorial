@@ -121,7 +121,8 @@ export default [
     id: 14,
     person: "Ricky, Cousin",
     title: "",
-    message: "",
+    message:
+      "As we bid farewell to more than just a loved one, we say goodbye to a dear friend and a truly remarkable soul. Your warmth, laughter and the love you shared will always remain with us. Though you’re no longer here, your spirit will live on in the joy you brought and lives you touched. Rest easy, you will always be remembered.",
     portrait: "/images/portraits/ricky.jpg",
   },
   {
@@ -172,13 +173,6 @@ export default [
     portrait: "/images/portraits/supi.jpeg",
   },
   {
-    id: 21,
-    person: "Steven Okello",
-    title: "",
-    message: "",
-    portrait: "",
-  },
-  {
     id: 22,
     person: "Dr. Laura Naliaka Ochieng, Sister-In-Law",
     title: "Dear Mama Maya",
@@ -203,13 +197,6 @@ export default [
     portrait: "/images/portraits/silo.jpeg",
   },
   {
-    id: 25,
-    person: "Kevo OT",
-    title: "",
-    message: "",
-    portrait: "",
-  },
-  {
     id: 26,
     person: "Prince",
     title: "",
@@ -224,12 +211,5 @@ export default [
     message:
       "Our legacy is really the lives we touch, the inspiration we give, altering someone's plan - if even for a moment - and getting them to think, cry, laugh, argue. More than anything, we are remembered for our smiles; and JC always had this huge smile on her face full of love and compassion. May her soul rest in eternal. We love you eternally.",
     portrait: "",
-  },
-  {
-    id: 28,
-    person: "Sabina",
-    title: "",
-    message: "",
-    portrait: "/images/portraits/sabina.jpg",
   },
 ];
