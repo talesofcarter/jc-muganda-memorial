@@ -1,39 +1,47 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/variants";
 import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    message: "",
-  });
-
+  const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const sendEmail = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    console.log("Form submitted:", formData);
-    setFormData({ fullName: "", email: "", message: "" });
-    setSubmitSuccess(true);
-    setIsSubmitting(false);
-
-    // Reset success message after 5 seconds
-    setTimeout(() => setSubmitSuccess(false), 5000);
+    emailjs
+      .sendForm("service_omtt9wa", "template_1wmy8er", form.current, {
+        publicKey: "rlTmfhjKIcCRncuhH",
+      })
+      .then(
+        () => {
+          setName("");
+          setEmail("");
+          setMessage("");
+          setIsSuccess(true);
+          setIsSubmitting(false);
+          setTimeout(() => setIsSuccess(false), 3000);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
+
+  const handleName = (e) => setName(e.target.value);
+  const handleEmail = (e) => setEmail(e.target.value);
+  const handleMessage = (e) => setMessage(e.target.value);
 
   return (
     <footer className="bg-slate-900 text-slate-200 border-t border-slate-700 pt-16 min-h-screen pt-navbar">
@@ -144,7 +152,7 @@ const Footer = () => {
                   {
                     name: "Github",
                     icon: FaGithub,
-                    href: "#",
+                    href: "https://github.com/talesofcarter",
                   },
                   {
                     name: "Instagram",
@@ -219,14 +227,14 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-orange-300">
               Send a Message
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={sendEmail} ref={form} className="space-y-4">
               <div>
                 <input
                   type="text"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  placeholder="Your Name"
+                  name="from_name"
+                  value={name}
+                  onChange={handleName}
+                  placeholder="Full Name"
                   className="w-full px-4 py-2 bg-slate-700 text-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200 focus:ring-offset-2 focus:ring-offset-slate-800 placeholder-slate-400"
                   required
                   aria-label="Full Name"
@@ -236,8 +244,8 @@ const Footer = () => {
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  value={email}
+                  onChange={handleEmail}
                   placeholder="Email Address"
                   className="w-full px-4 py-2 bg-slate-700 text-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200 focus:ring-offset-2 focus:ring-offset-slate-800 placeholder-slate-400"
                   required
@@ -247,8 +255,8 @@ const Footer = () => {
               <div>
                 <textarea
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
+                  value={message}
+                  onChange={handleMessage}
                   placeholder="Your Message"
                   rows="4"
                   className="w-full px-4 py-2 bg-slate-700 text-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200 focus:ring-offset-2 focus:ring-offset-slate-800 placeholder-slate-400"
@@ -270,7 +278,7 @@ const Footer = () => {
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </div>
-              {submitSuccess && (
+              {isSuccess && (
                 <div className="p-3 bg-green-500/20 text-green-300 rounded-lg text-center">
                   Thank you! Your message has been sent successfully.
                 </div>
