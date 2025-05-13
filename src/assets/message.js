@@ -126,14 +126,6 @@ export default [
     portrait: "/images/portraits/ricky.jpg",
   },
   {
-    id: 15,
-    person: "John, Cousin",
-    title: "",
-    message: "",
-    portrait: "",
-  },
-
-  {
     id: 16,
     person: "Regina, Cousin",
     title: "",
