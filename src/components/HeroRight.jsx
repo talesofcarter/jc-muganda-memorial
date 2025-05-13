@@ -51,7 +51,7 @@ const HeroRight = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="font-serif uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-orange-300 mt-4 animate-fade-in-up"
+        className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-orange-300 mt-4 animate-fade-in-up"
       >
         Jean-Carol Muganda
       </motion.h1>
