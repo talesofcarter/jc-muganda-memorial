@@ -250,12 +250,6 @@ const Gallery = () => {
         <p>In Loving Memory of Jean-Carol Muganda.</p>
         <div className="mt-4 flex justify-center gap-6">
           <a
-            href="/privacy"
-            className="text-orange-200 hover:text-orange-100 font-medium transition-colors"
-          >
-            Privacy Policy
-          </a>
-          <a
             href="/contact"
             className="text-orange-200 hover:text-orange-100 font-medium transition-colors"
           >
